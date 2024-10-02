@@ -283,14 +283,14 @@ footer p {
 .link-info {
     display: flex;
     align-items: center;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
+    background: rgba(25, 25, 25, 0.8); /* Alterado para se alinhar com o fundo geral */
+    border: 1px solid #333; /* Usando cor de borda consistente */
     padding: 10px;
     border-radius: 15px;
     transition: background 0.3s, transform 0.3s;
     backdrop-filter: blur(20px);
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3),
-                -4px -4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), /* Mantido consistente com o restante */
+                0 2px 4px rgba(255, 255, 255, 0.1); /* Ajuste de sombra */
 }
 
 .link-info img {
@@ -302,10 +302,10 @@ footer p {
 
 .link-info p {
     margin: 0;
-    color: var(--text-color);
+    color: #ffffff; /* Alterado para garantir a mesma cor de texto que o resto do site */
 }
 
 .link-info:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2); /* Levemente ajustado para efeito hover */
     transform: scale(1.05);
 }
