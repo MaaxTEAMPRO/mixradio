@@ -1,23 +1,7 @@
-:root {
-    --background-gradient: linear-gradient(to right, 
-    #f4f9fc 0%,
-    #d2e3eed4 10%,
-    #cfe4f2 55%,
-    #d2e3ee 80%,
-    #d2e3ee 100%
-);
-
-
-    --glass-bg: rgb(255 255 255 / 39%);
-    --glass-border: #48627b21;
-    --glass-shadow: #d2e3ee 100%;
-    --text-color: #31383f;
-    --accent-color: #98b9cf;
-}
-
+/* Estilos gerais */
 body {
-    background: var(--background-gradient);
-    color: var(--text-color);
+    background-color: #121212;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -28,22 +12,35 @@ body {
 }
 
 header {
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(90deg, #0342b8, #0385b8, #8d12ff, #ff00aa, #ba55d3);
+    background-size: 300% 300%;
+    animation: gradientAnimation 20s ease infinite;
     padding: 0.4em;
     text-align: center;
-    border-bottom: 1px solid var(--glass-border);
-    box-shadow: 0 4px 8px var(--glass-shadow);
+    border-bottom: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 10;
     position: sticky;
     top: 0;
-    margin-bottom: 20px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h2 {
     margin: 0;
-    color: var(--text-color);
-    font-size: 24px;
+    color: #ffffff;
+    font-size: 24px; /* Aumenta o tamanho da fonte do titulo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -61,19 +58,17 @@ section {
 input, button {
     padding: 0.75em;
     margin-top: 0.5em;
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    color: var(--text-color);
-    border: 1px solid var(--glass-border);
-    border-radius: 15px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 4px 4px 10px #00000000,
-                -4px -4px 10px #00000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     font-size: 1em;
 }
 
 button:hover {
-    background-color: rgb(0 0 0 / 5%);
+    background-color: #555;
     transform: scale(1.05);
 }
 
@@ -87,22 +82,20 @@ button:hover {
 
 #stations li {
     padding: 1em;
-    border: 1px solid var(--glass-border);
-    border-radius: 15px;
+    border: 1px solid #333;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 4px 4px 10px #00a2ff05,
-                -4px -4px 10px #00000003;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
+    background-color: #1f1f1f;
 }
 
 #stations li:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #333;
     transform: scale(1.05);
 }
 
@@ -111,7 +104,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
-    font-size: 20px;
+    font-size: 20px; /* Aumenta o tamanho da fonte do nome da radio */
 }
 
 .station-info img {
@@ -125,13 +118,11 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
+    background-color: #1f1f1f;
     padding: 2em;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px #00a2ff05,
-                -4px -4px 10px #00000003;
-    transition: transform 0s;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
 #player-container:hover {
@@ -154,30 +145,29 @@ button:hover {
 .player-button {
     background: none;
     border: none;
-    color: var(--text-color);
+    color: #ffffff;
     font-size: 1.5em;
     cursor: pointer;
     transition: color 0.3s, transform 0.3s;
 }
 
 .player-button:hover {
-    color: var(--accent-color);
+    color: #ff5722;
     transform: scale(1.2);
 }
 
 footer {
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
+    background-color: #1f1f1f;
     padding: 1em;
     text-align: center;
-    border-top: 1px solid var(--glass-border);
-    box-shadow: 0 -4px 8px var(--glass-shadow);
+    border-top: 1px solid #333;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
     margin-top: auto;
 }
 
 footer p {
     margin: 0;
-    color: #666;
+    color: #bbb;
     font-size: 0.875em;
 }
 
@@ -191,28 +181,26 @@ footer p {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.75);
     align-items: center;
     justify-content: center;
 }
 
 .modal-content {
-    background: var(--glass-bg);
+    background-color: #1f1f1f;
     margin: auto;
     padding: 2em;
-    border: 1px solid var(--glass-border);
-    border-radius: 15px;
+    border: 1px solid #333;
+    border-radius: 10px;
     width: 80%;
     max-width: 500px;
     position: relative;
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3),
-                -4px -4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     animation: fadeIn 0.5s;
 }
 
 .close-button {
-    color: #666;
+    color: #bbb;
     position: absolute;
     top: 10px;
     right: 20px;
@@ -223,7 +211,7 @@ footer p {
 }
 
 .close-button:hover {
-    color: #000;
+    color: #fff;
 }
 
 @keyframes fadeIn {
@@ -236,30 +224,28 @@ footer p {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
-    border-radius: 15px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3),
-                -4px -4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transform: scale(0.8);
 }
 
 .control-button {
     background: none;
     border: none;
-    color: var(--text-color);
+    color: #ffffff;
     font-size: 1.2em;
     cursor: pointer;
     transition: color 0.3s, transform 0.3s;
 }
 
 .control-button:hover {
-    color: var(--accent-color);
+    color: #ff5722;
     transform: scale(1.1);
 }
 
@@ -269,13 +255,11 @@ footer p {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
+    background-color: #1f1f1f;
     padding: 0.5em 1em;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3),
-                -4px -4px 10px rgba(0, 0, 0, 0.1);
-    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
     display: none;
     font-size: 1em;
     z-index: 1000;
