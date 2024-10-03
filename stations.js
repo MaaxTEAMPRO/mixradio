@@ -10,7 +10,7 @@ const stations = [
         icon: 'icons/default_radio_icon.png'
     },
     {
-        name: 'Flash FM 80s',
+        name: 'Flash FM',
         url: 'https://flashfm.ice.infomaniak.ch/flashfm-128.mp3',
         icon: 'icons/default_radio_icon.png'
     }
