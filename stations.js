@@ -5,9 +5,9 @@ const stations = [
         icon: 'icons/Love_Radio_Timeless_Songs.png'
     },
     {
-        name: 'Classic Hits Radio',
-        url: 'https://stream.classichits.com/stream.aac',
-        icon: 'icons/Classic_Hits_Radio.png'
+        name: 'Classic Hits 109 FM',
+        url: 'https://broadcast.classichits109.com/70s-90s',
+        icon: 'icons/default_radio_icon.png'
     },
     {
         name: 'Jazz Radio',
