@@ -13,9 +13,22 @@
         <h2 id="current-radio"> </h2>
     </header>
     <main>
-        <!-- Seção de Instruções de Uso -->
+        <!-- Seção do Player -->
+        <section id="radio-player">
+            <div id="player-container">
+                <audio id="player" controls></audio>
+                <div id="player-controls">
+                    <button id="play-pause" class="player-button"><i class="fas fa-play"></i></button>
+                    <button id="stop" class="player-button"><i class="fas fa-stop"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Instruções de Uso abaixo do Player -->
         <section id="usage-instructions">
-            <p>Esse é o aplicativo oficial de rádios da Família Legend<span style="font-size: 0.75em;">™</span>, para utilizar é bem simples, basta clicar em uma rádio abaixo, ela irá começar a tocar em alguns segundos, em seguida deslize a tela para baixo até encontrar a aba de "salas do avakin", basta clicar na sala correspondente ao dia.</p>
+            <div class="instructions-box">
+                <p>Esse é o aplicativo oficial de rádios da Família Legend<span style="font-size: 0.75em;">™</span>. Para utilizar é bem simples: basta clicar em uma rádio abaixo, ela irá começar a tocar em alguns segundos. Em seguida, deslize a tela para baixo até encontrar a aba de "salas do avakin". Basta clicar na sala correspondente ao dia.</p>
+            </div>
         </section>
 
         <!-- Seção de Rádios Disponíveis -->
