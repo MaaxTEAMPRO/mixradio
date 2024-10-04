@@ -1,20 +1,20 @@
 // Definindo variáveis agrupadas em objetos
 const link1 = {
-    name: 'Sala Gold 80s',
+    name: '[avakin] Oldies 80s',
     url: 'https://get.avakin.com/WxfdUKs6lNb',
-    icon: 'icon_links/avakin1.jpg'
+    icon: 'icon_links/avakin.webp'
 };
 
 const link2 = {
-    name: 'YouTube',
-    url: 'https://www.youtube.com',
-    icon: 'icon_links/youtube.png'
+    name: '[avakin] Oldies 90s',
+    url: 'https://get.avakin.com/WxfdUKs6lNb',
+    icon: 'icon_links/avakin.webp'
 };
 
 const link3 = {
-    name: 'OpenAI',
-    url: 'https://www.openai.com',
-    icon: 'icon_links/openai.png'
+    name: '[avakin] Oldies 2000s',
+    url: 'https://get.avakin.com/WxfdUKs6lNb',
+    icon: 'icon_links/avakin.webp'
 };
 
 // Usando os objetos para criar o array de links

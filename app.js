@@ -94,7 +94,7 @@ function showVolumePopup(volume) {
     }, 1000);
 }
 
-// Inicialização do script quando o DOM estiver carregado
+// Função para expandir e contrair instruções
 document.addEventListener('DOMContentLoaded', () => {
     renderStations(stations);
     renderLinks(links);
@@ -131,5 +131,17 @@ document.addEventListener('DOMContentLoaded', () => {
         player.pause();
         player.currentTime = 0;
         pauseButton.innerHTML = '<i class="fas fa-play"></i>';
+    });
+
+    // Função para expandir e contrair instruções
+    const toggleButton = document.getElementById('toggle-instructions');
+    const instructionsContent = document.getElementById('instructions-content');
+
+    toggleButton.addEventListener('click', () => {
+        if (instructionsContent.style.display === 'none') {
+            instructionsContent.style.display = 'block';
+        } else {
+            instructionsContent.style.display = 'none';
+        }
     });
 });

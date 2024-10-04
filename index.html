@@ -24,12 +24,25 @@
             </div>
         </section>
 
-        <!-- Seção de Instruções de Uso abaixo do Player -->
+        <!-- Seção de Instruções de Uso com Expansão -->
         <section id="usage-instructions">
             <div class="instructions-box">
-                <p>Esse é o aplicativo oficial de rádios da Família Legend<span style="font-size: 0.75em;">™</span>. Para utilizar é bem simples: basta clicar em uma rádio abaixo, ela irá começar a tocar em alguns segundos. Em seguida, deslize a tela para baixo até encontrar a aba de "salas do avakin". Basta clicar na sala correspondente ao dia.</p>
+                <button id="toggle-instructions">Como o MixLegend™ Funciona? (Clique para expandir)</button>
+                <div id="instructions-content" style="display: none;">
+                    <p style="margin-bottom: 20px;">1 - Clique em uma rádio no menu de rádios disponíveis abaixo.</p>
+                    <p style="margin-bottom: 20px;">2 - Aguarde alguns segundos até que a música comece a tocar automaticamente no player.</p>
+                    <p style="margin-bottom: 20px;">3 - Você pode controlar o volume da música através do menu suspenso na lateral do app.</p>
+                    <p style="margin-bottom: 35px;">4 - Na parte inferior do app você encontra a seção de Salas do Avakin, basta clicar em uma que você será redirecionado para a sala correspondente no jogo.</p>
+                    <p><strong>Observações:</strong></p>
+                    <p style="margin-bottom: 20px;">
+                        - Se o rádio parar de tocar após algum tempo, é porquê seu dispositivo está com recursos como Economia de energia/bateria ativados. Se seu aparelho suporta navegador em janela pop-up com jogos abertos, ou possui recursos de "gametime", abra o site <a href="https://familialegend.vercel.app" target="_blank" style="color: #00BFFF;">https://familialegend.vercel.app</a> diretamente do navegador em pop-up.
+                    </p>
+                    <p>
+                        - Esse serviço é mantido exclusivamente pela Família Legend, através das licenças GPL 3.0 e Creative Commons BY-NC. Reporte ilegalidades no instagram: <a href="https://www.instagram.com/familialegendoficial" target="_blank" style="color: #00BFFF;">@familialegendoficial</a>
+                    </p>
+                </div>
             </div>
-        </section>
+        </section>        
 
         <!-- Seção de Rádios Disponíveis -->
         <section id="radio-list">
@@ -40,12 +53,12 @@
         
         <!-- Seção de Links Diversos -->
         <section id="additional-links">
-            <h3>Salas do Avakin:</h3>
+            <h3>Salas do Avakin: (em teste)</h3>
             <ul id="links-list" class="links-list"></ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Família Legend, todos os direitos reservados.</p>
+        <p>&copy; 2024 MixLegend™ by Família Legend, todos os direitos reservados.</p>
     </footer>
 
     <!-- Menu de Controle de Volume -->
